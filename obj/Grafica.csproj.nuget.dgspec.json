@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Paulo Glanzel\\Desktop\\GQS\\C#\\Grafica\\Grafica.csproj": {}
+    "C:\\Users\\Paulo Glanzel\\Desktop\\GQS\\C#\\GQS\\Grafica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Paulo Glanzel\\Desktop\\GQS\\C#\\Grafica\\Grafica.csproj": {
+    "C:\\Users\\Paulo Glanzel\\Desktop\\GQS\\C#\\GQS\\Grafica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Paulo Glanzel\\Desktop\\GQS\\C#\\Grafica\\Grafica.csproj",
+        "projectUniqueName": "C:\\Users\\Paulo Glanzel\\Desktop\\GQS\\C#\\GQS\\Grafica.csproj",
         "projectName": "Grafica",
-        "projectPath": "C:\\Users\\Paulo Glanzel\\Desktop\\GQS\\C#\\Grafica\\Grafica.csproj",
+        "projectPath": "C:\\Users\\Paulo Glanzel\\Desktop\\GQS\\C#\\GQS\\Grafica.csproj",
         "packagesPath": "C:\\Users\\Paulo Glanzel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Paulo Glanzel\\Desktop\\GQS\\C#\\Grafica\\obj\\",
+        "outputPath": "C:\\Users\\Paulo Glanzel\\Desktop\\GQS\\C#\\GQS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Paulo Glanzel\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -11,3 +11,16 @@ C:\Users\Paulo Glanzel\Desktop\GQS\C#\Grafica\obj\Debug\netcoreapp3.1\Grafica.cs
 C:\Users\Paulo Glanzel\Desktop\GQS\C#\Grafica\obj\Debug\netcoreapp3.1\Grafica.dll
 C:\Users\Paulo Glanzel\Desktop\GQS\C#\Grafica\obj\Debug\netcoreapp3.1\Grafica.pdb
 C:\Users\Paulo Glanzel\Desktop\GQS\C#\Grafica\obj\Debug\netcoreapp3.1\Grafica.genruntimeconfig.cache
+C:\Users\Paulo Glanzel\Desktop\GQS\C#\GQS\bin\Debug\netcoreapp3.1\Grafica.exe
+C:\Users\Paulo Glanzel\Desktop\GQS\C#\GQS\bin\Debug\netcoreapp3.1\Grafica.deps.json
+C:\Users\Paulo Glanzel\Desktop\GQS\C#\GQS\bin\Debug\netcoreapp3.1\Grafica.runtimeconfig.json
+C:\Users\Paulo Glanzel\Desktop\GQS\C#\GQS\bin\Debug\netcoreapp3.1\Grafica.runtimeconfig.dev.json
+C:\Users\Paulo Glanzel\Desktop\GQS\C#\GQS\bin\Debug\netcoreapp3.1\Grafica.dll
+C:\Users\Paulo Glanzel\Desktop\GQS\C#\GQS\bin\Debug\netcoreapp3.1\Grafica.pdb
+C:\Users\Paulo Glanzel\Desktop\GQS\C#\GQS\obj\Debug\netcoreapp3.1\Grafica.csprojAssemblyReference.cache
+C:\Users\Paulo Glanzel\Desktop\GQS\C#\GQS\obj\Debug\netcoreapp3.1\Grafica.AssemblyInfoInputs.cache
+C:\Users\Paulo Glanzel\Desktop\GQS\C#\GQS\obj\Debug\netcoreapp3.1\Grafica.AssemblyInfo.cs
+C:\Users\Paulo Glanzel\Desktop\GQS\C#\GQS\obj\Debug\netcoreapp3.1\Grafica.csproj.CoreCompileInputs.cache
+C:\Users\Paulo Glanzel\Desktop\GQS\C#\GQS\obj\Debug\netcoreapp3.1\Grafica.dll
+C:\Users\Paulo Glanzel\Desktop\GQS\C#\GQS\obj\Debug\netcoreapp3.1\Grafica.pdb
+C:\Users\Paulo Glanzel\Desktop\GQS\C#\GQS\obj\Debug\netcoreapp3.1\Grafica.genruntimeconfig.cache

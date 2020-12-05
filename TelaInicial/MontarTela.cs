@@ -1,13 +1,11 @@
 using System;
-namespace Grafica.TelaInicial
+namespace GQS.TelaInicial
 {
     public class MontarTela
     {
         public MontarTela()
         {
-            Console.WriteLine("Tela Inicial");
-            Console.ReadLine();
-            
+            Console.WriteLine("---------- Sistema de Impressão - Gráfica Novo Horizonte ----------");
         }
     }
 }
