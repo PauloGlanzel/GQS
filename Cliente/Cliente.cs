@@ -6,10 +6,18 @@ namespace GQS.Cliente
         public string Nome;
         public string Cpf;
 
-        public Cliente(string nome, string cpf)
+        public void SetNome(string n)
         {
-            Nome = nome;
-            Cpf = cpf;
+            Nome = n;
+        }
+
+        public void SetCpf(string c)
+        {
+            Cpf = c;
+        }
+        public void infoCliente()
+        {
+            Console.WriteLine(">.\n>.Nome do Cliente.: {0} - CPF.: {1}",Nome,Cpf);
         }
     }
 }
