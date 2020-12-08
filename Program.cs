@@ -8,11 +8,12 @@ namespace Grafica
    {
       static void Main(string[] args)
       {
+         string t1 = ">.------ Sistema de Impressão - Gráfica Novo Horizonte ------";
          var c1 = new Cliente();
          var p1 = new Pedido();
          parte1:
          Console.Clear();
-         Console.WriteLine(">.---------- Sistema de Impressão - Gráfica Novo Horizonte ----------");
+         Console.WriteLine(t1);
          Console.Write(">.\n>.Digite o Nome do Cliente.: ");
          string n = Console.ReadLine().ToString();
          if(String.IsNullOrEmpty(n))
@@ -35,11 +36,11 @@ namespace Grafica
          }
          parte2:
          Console.Clear();
-         Console.WriteLine(">.---------- Sistema de Impressão - Gráfica Novo Horizonte ----------\n");
+         Console.WriteLine(t1);
          c1.infoCliente();
-         Console.WriteLine(">.\n>.-------------- Informe os Dados do Serviço de Cópias --------------\n");
+         Console.WriteLine(">.\n>.--------- Informe os Dados do Serviço de Cópias ---------\n");
          
-         Console.Write(">.Você deseja F-Fotocópias ou I-Impressão.: ");
+         Console.Write(">.\n>.Você deseja F-Fotocópias ou I-Impressão.....: ");
          string ci = Console.ReadLine();
          if(String.IsNullOrEmpty(ci))
             goto parte2;
@@ -53,7 +54,7 @@ namespace Grafica
             p1.setFotoCopia(false);
             p1.setImpressao(true);
          }
-         Console.Write(">.Você quer em P-Preto e Branco ou C-Colorido.: ");
+         Console.Write(">.\n>.Você quer em P-Preto e Branco ou C-Colorido.: ");
          string cor = Console.ReadLine();
          if(string.IsNullOrEmpty(cor))
             goto parte2;
@@ -67,32 +68,37 @@ namespace Grafica
             p1.setCor(true);
             p1.setPb(false);
          }
-         Console.Write(">.Encadernado [S/N].: ");
+         Console.Write(">.\n>.Encadernado [S/N]...........................: ");
          String enc = Console.ReadLine();
          if(string.IsNullOrEmpty(enc))
             goto parte2;
          if(enc.Equals("S") || enc.Equals("s"))
             p1.setEncadernacao(true);
-         Console.Write(">.Número de cópias.: ");
+         else
+            p1.setEncadernacao(false);
+             
+         Console.Write(">.\n>.Número de cópias............................: ");
          int cop = int.Parse(Console.ReadLine());
          if(cop <= 0)
             goto parte2;
          p1.setCopias(cop);
-         Console.Write(">.Número de páginas.: ");
+         Console.Write(">.\n>.Número de páginas...........................: ");
          int pag = int.Parse(Console.ReadLine());
          if(pag <= 0)
             goto parte2;
          p1.setNumPaginas(pag);
          if(ci.Equals("i") || ci.Equals("I"))
          {
-            Console.Write(">.Qual o intervalo de Impressão.: ");
+            Console.Write(">.\n>.Qual o intervalo de Impressão...............: ");
             string interv = Console.ReadLine();
-            Console.Write(">.Nome do arquivo para impressão.: ");
+            Console.Write(">.\n>.Nome do arquivo para impressão..............: ");
             string arq = Console.ReadLine();
             p1.setIntImpressao(interv);
             p1.setArquivo(arq);
          }
-
+         Console.Clear();
+         Console.WriteLine(t1);
+         c1.infoCliente();
          p1.infoPedido();
 
          Console.Write("\n>.Deseja continuar s/n..:");

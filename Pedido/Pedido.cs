@@ -27,31 +27,61 @@ namespace GQS.Pedido
         public void setCopias(int cop) => copias = cop;
         public void setIntImpressao(string imp) => intImpressao = imp;
         public void setArquivo(string arq) => arquivo = arq;
-        
+        private string tipo;
+        private string cor;
+        private double preco;
         public void infoPedido()
         {
-            Console.WriteLine(">.\n>.-----------Informações do pedido-------------");
+            string linha = ">.\n>.-----------------------------------------------------------";
+            Console.WriteLine(">.\n>.----------------- Informações do pedido -------------------");
             if(fotoCopia && !impressao)
             {
-                Console.WriteLine("Fotocópia");
+                tipo = "Fotocópia";
                 qtd = copias * numPaginas;
             }
             else if(!fotoCopia && impressao)
             {
-                Console.WriteLine("Impressão");
+                tipo = "Impressão";
                 qtd = copias * numPaginas;
             }
             if(pb && !colorido)
             {
-                Console.WriteLine("Preto e Branco");
+                cor = "Preto e Branco";
                 total = qtd*vlPb;
+                preco = vlPb;
             }
             else if(!pb && colorido)
             {
-                Console.WriteLine("Colorido");
+                cor = "Colorido";
                 total = qtd*vlColorido;
+                preco = vlColorido;
             }
-            Console.WriteLine(total);
+            if(encadernacao)
+            {
+                float capa = vlEncadernacao*copias;
+                Console.WriteLine(">.\n>.Você pediu {0}, {1}, Encadernado.", tipo, cor);
+                Console.WriteLine(">.\n>.{0} cópia(s) de {1} página(s), = {2} impressão(ões)\n>.ao valor unitário de R$ {3} cada.", copias, numPaginas, qtd, preco.ToString("N2"));
+                if(!fotoCopia && impressao)
+                    Console.WriteLine(">.\n>.Intervalo de páginas {0}, do arquivo: {1}",intImpressao, arquivo);
+                Console.WriteLine(">.\n>.Valor das cópias.................................: R$ {0}",total.ToString("N2"));                
+                float totPedido = total + capa;
+                Console.WriteLine(">.\n>.Valor da Encadernação............................: R$ {0}", capa.ToString("N2"));
+                Console.WriteLine(">.\n>.Valor Total do Pedido de Cópias..................: R$ {0}", totPedido.ToString("N2"));
+                Console.WriteLine(linha);
+            }
+            else
+            {
+                float capa = 0;
+                Console.WriteLine(">.\n>.Você pediu {0}, {1}, SEM encadernação.", tipo, cor);
+                Console.WriteLine(">.\n>.{0} cópia(s) de {1} página(s), = {2} impressão(ões)\n>.ao valor unitário de R$ {3} cada.", copias, numPaginas, qtd, preco.ToString("N2"));
+                if(!fotoCopia && impressao)
+                    Console.WriteLine(">.\n>.Intervalo de páginas {0}, do arquivo: {1}",intImpressao, arquivo);
+                Console.WriteLine(">.\n>.Valor das cópias.................................: R$ {0}",total.ToString("N2"));                
+                float totPedido = total + capa;
+                Console.WriteLine(">.\n>.Valor da Encadernação............................: R$ {0}", capa.ToString("N2"));
+                Console.WriteLine(">.\n>.Valor Total do Pedido de Cópias..................: R$ {0}", totPedido.ToString("N2"));
+                Console.WriteLine(linha);
+            }
         }
     }
 }
