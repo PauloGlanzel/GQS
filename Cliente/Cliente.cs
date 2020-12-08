@@ -3,8 +3,8 @@ namespace GQS.Cliente
 {
     class Cliente
     {
-        public string Nome;
-        public string Cpf;
+        private string Nome;
+        private string Cpf;
         public void SetNome(string n)
         {
             Nome = n;
